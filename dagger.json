@@ -1,4 +1,8 @@
 {
   "name": "dagger-tasks",
-  "engineVersion": "v0.18.19"
+  "engineVersion": "v0.19.3",
+  "sdk": {
+    "source": "python"
+  },
+  "source": ".dagger"
 }
