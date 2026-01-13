@@ -19,7 +19,7 @@ class DaggerTasks:
         """
         return await (dag.container()
                       .from_("maven:latest")
-                      .with_mounted_directory("/src", source)
+                      .with_directory("/src", source)
                       .with_workdir("/src")
                       .with_exec(["mvn", "clean", "install", "-DskipTests"])
                       .with_entrypoint(["mvn", "spring-boot:run"])
